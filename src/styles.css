@@ -97,3 +97,22 @@
   from { opacity: 0; transform: translateY(24px); }
   to { opacity: 1; transform: none; }
 }
+
+@utility marquee {
+  animation: marquee 40s linear infinite;
+}
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@utility stage-3d {
+  perspective: 1200px;
+}
+@utility float-3d {
+  animation: float-3d 7s ease-in-out infinite;
+  transform-style: preserve-3d;
+}
+@keyframes float-3d {
+  0%, 100% { transform: rotateX(8deg) rotateY(-10deg) translateY(0); }
+  50% { transform: rotateX(-4deg) rotateY(10deg) translateY(-10px); }
+}

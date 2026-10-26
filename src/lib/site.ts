@@ -4,7 +4,10 @@ export const services = [
   { k: "03", name: "Systems", title: "Systems that scale", body: "Dashboards and management platforms shaped around how your team works.", points: ["Role-based access", "Reports & analytics", "Web, mobile, desktop"] },
   { k: "04", name: "Automation", title: "Processes that run themselves", body: "We turn manual, paper-heavy work into accurate, automated systems your whole team can trust.", points: ["Workflow automation", "Fewer errors, more accuracy", "Clear, open processes"] },
   { k: "05", name: "Review & Modernize", title: "Systems, realigned", body: "We review what you already run — ERPs, school management systems, legacy tools — fix them, upgrade them and align them to how you really work.", points: ["ERP & school system fixes", "Upgrades & modernization", "Process clarity"] },
-  { k: "06", name: "Research", title: "Research that guides", body: "Data, market and technical research behind every product decision.", points: ["Market studies", "Data analysis", "Technical feasibility"] },
+  { k: "06", name: "AI & Agents", title: "AI that works inside your business", body: "We integrate AI and agents into your company — automations that lift productivity, in your team's own language and local dialects.", points: ["AI agents & assistants", "Workflow automations", "Local dialects & voice"] },
+  { k: "07", name: "Data Analytics", title: "Decisions from your own data", body: "We guide you through your data so every decision is backed by evidence, not guesswork.", points: ["Dashboards & reports", "Data cleaning & modelling", "Guided decision-making"] },
+  { k: "08", name: "Growth Analytics", title: "Never lose a customer — or a shilling", body: "Every site and system we build tracks productivity with funnel analytics, integrated with Google Search, Meta Ads and more.", points: ["Funnel analytics", "Google & Meta Ads integration", "Conversion tracking"] },
+  { k: "09", name: "Research", title: "Research that guides", body: "Data, market and technical research behind every product decision.", points: ["Market studies", "Data analysis", "Technical feasibility"] },
 ];
 
 export const pillars = [
@@ -23,6 +26,31 @@ export const products: Product[] = [
   { slug: "dravpay", name: "Drav Pay", tag: "Payments · SaaS", line: "One payment layer in every system, and a sacco-to-sacco switch.", body: "Drav Pay is integrated across all our systems. We connect with partner tech companies through their APIs and run a switch that links sacco to sacco — a gateway that makes payments seamless, keeps security at the head, lowers costs and sets a standard for the industry.", points: ["Built into every DravTech system", "Sacco-to-sacco switch", "Lower cost per transaction", "Security first"] },
   { slug: "model-forge", name: "Model Forge", tag: "AI Models", line: "Describe the AI model you need. Get it tested and running.", body: "Tell us the task; Model Forge returns a working, tested AI system you can run.", points: ["Plain-language brief", "Tested before delivery", "Deployed and running"] },
   { slug: "pos", name: "DravTech POS", tag: "Point of Sale", line: "One POS, shaped for every industry.", body: "A single point-of-sale platform with editions for hotels and restaurants, chemists and hospitals, schools, accounting and retail — each tuned to how that business actually sells, bills and reports.", points: ["Hotels & restaurants", "Chemists & hospitals", "Schools & accounting", "Drav Pay built in"] },
+];
+
+export const partners = [
+  "KEPSA", "Government of Kenya", "Hope and Home KE Nairobi", "Trinity Cycle Mart South C", "Bana Girl",
+  "Grassroot Development Organisation Kenya (GRADO)", "Chuka University", "Ray Vision Technologies Nairobi",
+  "Lowlands Hotel Chuka", "Finesse Publishing Limited", "Pitch & Safe",
+];
+
+export const impact = [
+  { k: "01", tag: "Youth · NYOTA", title: "Mastercraftsmen in IT", body: "Through NYOTA, organised by the Government of Kenya in partnership with KEPSA, we mentor and skill young people as IT mastercraftsmen.", with: "GoK × KEPSA" },
+  { k: "02", tag: "Skilling", title: "IT skills & software packages", body: "Hands-on training across different IT skills and packages, so young people leave job-ready.", with: "Open programmes" },
+  { k: "03", tag: "Mentorship", title: "Staff mentorship", body: "Structured mentorship for staff and teams, built together with Finesse Publishing.", with: "Finesse" },
+  { k: "04", tag: "Climate", title: "Planting trees", body: "With the Grassroot Development Organisation Kenya, an NGO restoring land one tree at a time.", with: "GRADO" },
+  { k: "05", tag: "Startups", title: "Mentoring EcoFlow", body: "We mentor EcoFlow as they build infrastructure for automotives — connecting drivers to the nearest mechanic.", with: "EcoFlow" },
+  { k: "06", tag: "SMEs · Jiinue", title: "Bringing businesses online", body: "Our journey began when our team member worked on the Jiinue programme — Mastercard with KEPSA and Stahimili. We learned how SMEs really run, and built DravTech Ledger to help them manage their finances. Now we tool and mentor SMEs, and seek partners like KEPSA to scale it — with local dialects and voices built in.", with: "Mastercard × KEPSA × Stahimili" },
+];
+
+export const team = [
+  { name: "Peter Kariuki Mwangi", role: "QA & Chair of Council", edu: "BSc Electrical Engineering", note: "Effortless support — and the questions that really matter.", award: "Team of the Year · 1st" },
+  { name: "Friendlick Mbugua", role: "CEO · Marketing", edu: "BSc Economics & Statistics", note: "Creating the best brand and being its ambassador.", award: "Team of the Year · 1st" },
+  { name: "Samuel Kibunja", role: "Full Stack Engineer", edu: "BSc Computer Science", note: "Timely delivery, always innovating.", award: "Team of the Year · 1st" },
+  { name: "Vivian Naliaka", role: "Backend Systems & Data Analytics", edu: "BSc Computer Science", note: "The engine room behind our platforms.", award: "Second Degree · Tech" },
+  { name: "David Muigai", role: "Full Stack & Android Developer", edu: "BSc Electrical Engineering", note: "Full support for every customer.", award: "Second Degree · Tech" },
+  { name: "Godwin Mutembei", role: "Marketing", edu: "Bachelor of Journalism & Mass Media", note: "Telling our story with clarity.", award: "Second Degree · Marketing" },
+  { name: "Edwin Mwangi", role: "Media & Marketing", edu: "Media & Marketing", note: "Every frame, every campaign.", award: "Second Degree · Marketing" },
 ];
 
 export const hosting = [
