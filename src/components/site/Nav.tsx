@@ -3,6 +3,7 @@ import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
 const links = [
+  { to: "/", label: "Home" },
   { to: "/services", label: "Services" },
   { to: "/products", label: "Products" },
   { to: "/hosting", label: "Hosting" },
