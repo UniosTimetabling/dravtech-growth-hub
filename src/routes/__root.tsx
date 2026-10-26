@@ -12,6 +12,7 @@ import { useEffect, type ReactNode } from "react";
 
 import { Nav } from "../components/site/Nav";
 import { Footer } from "../components/site/Footer";
+import { ScrollTop } from "../components/site/ScrollTop";
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 
@@ -130,6 +131,7 @@ function RootComponent() {
         <Outlet />
       </main>
       <Footer />
+      <ScrollTop />
     </QueryClientProvider>
   );
 }
