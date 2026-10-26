@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import { ArrowRight, ArrowLeft, ChevronRight } from "lucide-react";
+import { ArrowRight, ArrowLeft, ChevronRight, Smartphone, CreditCard, Bitcoin, Wallet, Hexagon, Landmark, Zap, Globe } from "lucide-react";
 import hero1 from "@/assets/hero-1.jpg";
 import hero2 from "@/assets/hero-2.jpg";
 import work from "@/assets/work-systems.jpg";
@@ -95,13 +95,36 @@ function Services() {
   );
 }
 
+const payMethods = [
+  { name: "M-Pesa", icon: Smartphone },
+  { name: "Airtel Money", icon: Smartphone },
+  { name: "PayPal", icon: Wallet },
+  { name: "Visa · Mastercard", icon: CreditCard },
+  { name: "Amex", icon: CreditCard },
+  { name: "Stripe", icon: Zap },
+  { name: "Bitcoin", icon: Bitcoin },
+  { name: "Web3 wallets", icon: Hexagon },
+  { name: "Bank transfer", icon: Landmark },
+  { name: "Drav Pay", icon: Zap },
+  { name: "Google & Apple Pay", icon: Smartphone },
+  { name: "& more", icon: Globe },
+];
+
 function Feature() {
   return (
     <section className="mx-auto grid max-w-7xl gap-14 px-6 pb-32 lg:grid-cols-2 lg:items-center">
       <div className="order-2 lg:order-1">
         <p className="eyebrow text-primary">Ecommerce</p>
-        <h2 className="text-title mt-4">Sell online, get paid by M-Pesa tonight.</h2>
-        <p className="mt-6 max-w-md text-muted-foreground">Stores that load fast on any phone, with checkout, stock and delivery handled for you.</p>
+        <h2 className="text-title mt-4">Sell online, get paid <span className="text-primary">tonight.</span></h2>
+        <p className="mt-6 max-w-md text-muted-foreground">Stores that load fast on any phone, with checkout, stock and delivery handled for you — and every way your customers want to pay.</p>
+        <div className="stage-3d mt-10 grid max-w-lg grid-cols-3 gap-3 sm:grid-cols-4">
+          {payMethods.map((m, i) => (
+            <div key={m.name} className="float-3d flex aspect-square flex-col items-center justify-center gap-2 rounded-2xl bg-card p-3 text-center" style={{ animationDelay: `${i * -0.8}s` }}>
+              <m.icon className={`size-6 ${i % 4 === 0 ? "text-signal" : "text-primary"}`} />
+              <span className="text-xs font-semibold leading-tight">{m.name}</span>
+            </div>
+          ))}
+        </div>
         <Link to="/contact" className="mt-10 inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-3 font-semibold text-background transition-transform hover:scale-105">Start a store <ArrowRight className="size-4" /></Link>
       </div>
       <div className="tilt-card order-1 overflow-hidden rounded-3xl lg:order-2">
