@@ -85,7 +85,7 @@ export function Team() {
           <li key={m.name} className="flex items-baseline justify-between gap-6 py-5">
             <div>
               <p className="text-lg font-semibold">{m.name}</p>
-              <p className="text-sm text-muted-foreground">{m.role} · {m.edu}</p>
+              <p className="text-sm text-muted-foreground">{m.edu ? `${m.role} · ${m.edu}` : m.role}</p>
             </div>
             <span className="shrink-0 text-xs text-primary">{m.award.split("· ")[1]}</span>
           </li>

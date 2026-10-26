@@ -50,7 +50,7 @@ export const team = [
   { name: "Vivian Naliaka", role: "Backend Systems & Data Analytics", edu: "BSc Computer Science", note: "The engine room behind our platforms.", award: "Second Degree · Tech" },
   { name: "David Muigai", role: "Full Stack & Android Developer", edu: "BSc Electrical Engineering", note: "Full support for every customer.", award: "Second Degree · Tech" },
   { name: "Godwin Mutembei", role: "Marketing", edu: "Bachelor of Journalism & Mass Media", note: "Telling our story with clarity.", award: "Second Degree · Marketing" },
-  { name: "Edwin Mwangi", role: "Media & Marketing", edu: "Media & Marketing", note: "Every frame, every campaign.", award: "Second Degree · Marketing" },
+  { name: "Edwin Mwangi", role: "Media & Marketing", edu: "", note: "Every frame, every campaign.", award: "Second Degree · Marketing" },
 ];
 
 export const hosting = [
