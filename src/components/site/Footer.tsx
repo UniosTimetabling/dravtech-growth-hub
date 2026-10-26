@@ -13,6 +13,7 @@ export function Footer() {
           <p className="eyebrow text-primary">Company</p>
           <Link to="/services" className="text-muted-foreground hover:text-foreground">Services</Link>
           <Link to="/products" className="text-muted-foreground hover:text-foreground">Products</Link>
+          <Link to="/impact" className="text-muted-foreground hover:text-foreground">Impact</Link>
           <Link to="/about" className="text-muted-foreground hover:text-foreground">About</Link>
         </div>
         <div className="flex flex-col gap-3 text-sm">

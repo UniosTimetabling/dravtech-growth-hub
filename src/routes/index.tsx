@@ -12,6 +12,7 @@ import hostingImg from "@/assets/hosting.jpg";
 import studio from "@/assets/studio.mp4.asset.json";
 import { Scene3D } from "@/components/site/PageHero";
 import { Cta } from "@/components/site/Cta";
+import { Impact, Partners } from "@/components/site/Community";
 import { services, products, process, pillars, hosting } from "@/lib/site";
 
 export const Route = createFileRoute("/")({
@@ -214,7 +215,7 @@ function Products() {
       </div>
       <div>
         <p className="eyebrow text-primary">Live platforms</p>
-        <h2 className="text-title mt-4">Platforms you subscribe to. Systems we tailor to you.</h2>
+        <h2 className="text-title mt-4">SaaS platforms you subscribe to. Custom systems we tailor to you.</h2>
         <ul className="mt-10">
           {products.map((p, idx) => (
             <li key={p.name}>
@@ -260,6 +261,8 @@ function Index() {
       <Studio />
       <Ecosystem />
       <Stats />
+      <Impact />
+      <Partners />
       <Products />
       <Hosting />
       <Process />

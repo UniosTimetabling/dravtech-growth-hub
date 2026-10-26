@@ -4,6 +4,7 @@ import team from "@/assets/team.jpg";
 import studio from "@/assets/studio.mp4.asset.json";
 import { PageHero } from "@/components/site/PageHero";
 import { Cta } from "@/components/site/Cta";
+import { Team } from "@/components/site/Community";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -31,7 +32,7 @@ function AboutPage() {
       <PageHero img={aboutHero} tag="About us" title="People behind" accent="the code." />
       <section className="mx-auto max-w-7xl px-6 py-32">
         <p className="text-title max-w-4xl">
-          We are a small team in Kenya building software that <span className="text-primary">works hard</span> for growing businesses.
+          We are not just a studio. We build infrastructure for Africa — software that <span className="text-primary">works hard</span> for growing businesses.
         </p>
       </section>
       <section className="px-6">
@@ -48,6 +49,7 @@ function AboutPage() {
           </div>
         ))}
       </section>
+      <Team />
       <section className="px-6">
         <div className="relative mx-auto h-[60vh] max-w-7xl overflow-hidden rounded-3xl">
           <video src={studio.url} autoPlay muted loop playsInline className="absolute inset-0 size-full object-cover" />
